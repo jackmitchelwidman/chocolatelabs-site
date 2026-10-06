@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChocolateLabs</title>
+<meta name="description" content="ChocolateLabs is a small software lab. We make VibeJibe.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23eaf2ef'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%231f2a6b' stroke-width='3'/%3E%3C/svg%3E">
+<meta property="og:title" content="ChocolateLabs">
+<meta property="og:description" content="A small software lab. We make VibeJibe.">
+<meta property="og:url" content="https://chocolatelabs.me">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+body{background:#eaf2ef;color:#17313a;font-family:"JetBrains Mono",ui-monospace,monospace;display:grid;place-items:center;
+ background-image:radial-gradient(circle at 15% 15%,#fff 0,transparent 45%),radial-gradient(circle at 90% 85%,#d7e8f4 0,transparent 45%)}
+header,footer{position:fixed;left:24px;right:24px;display:flex;justify-content:space-between;font-size:.76rem;letter-spacing:.12em;color:#5d7b83}
+header{top:22px;text-transform:uppercase}header b{color:#17313a;font-weight:500}footer{bottom:22px}
+main{text-align:center;padding:0 16px;animation:rise 1.4s ease-out both}
+.slide{display:flex;width:min(84vw,660px);aspect-ratio:3/1;margin:0 auto;border-radius:10px;background:rgba(255,255,255,.5);border:1px solid rgba(23,49,58,.22);
+ box-shadow:0 30px 50px rgba(23,49,58,.18),inset 0 0 0 3px rgba(255,255,255,.7);transform:rotate(-3deg);transition:transform .4s}
+.slide:hover{transform:rotate(-1deg) translateY(-4px)}
+.frost{flex:none;width:30%;display:grid;place-content:center;gap:2px;background:rgba(255,255,255,.92);border-right:1px solid rgba(23,49,58,.15);border-radius:10px 0 0 10px;
+ font-family:Caveat,cursive;font-size:clamp(1rem,3.6vw,1.7rem);line-height:1.05;color:#1f2a6b;transform:rotate(-2deg)}
+.frost b{font-size:1.25em}.frost small{font-size:.7em;color:#8a4a5e}
+.glass{position:relative;flex:1;display:grid;place-items:center;overflow:hidden;border-radius:0 10px 10px 0}
+.stain{position:absolute;width:62%;aspect-ratio:1;border-radius:46% 54% 58% 42%/50% 44% 56% 50%;filter:blur(7px);opacity:.85;
+ background:radial-gradient(circle at 30% 35%,#ff7eb6 0 18%,transparent 40%),radial-gradient(circle at 68% 30%,#8f6bff 0 16%,transparent 42%),radial-gradient(circle at 60% 72%,#4fc3f7 0 16%,transparent 42%),radial-gradient(circle at 32% 70%,#ffc86b 0 14%,transparent 40%),radial-gradient(circle,#f3c4e4 0,#d9c8ff 60%,transparent 72%);animation:wob 12s ease-in-out infinite alternate}
+@keyframes wob{to{transform:rotate(25deg) scale(1.08)}}
+.cover{position:absolute;width:52%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(23,49,58,.3);background:rgba(255,255,255,.14)}
+.ring{position:relative;width:20%;aspect-ratio:1;border-width:clamp(4px,1vw,7px);border-radius:50%;border-style:solid;border-color:#dfe5f7;box-shadow:0 0 18px #3b4fd6,inset 0 0 10px rgba(59,79,214,.8);border-color:#1f2a6b;box-shadow:0 0 0 3px rgba(255,255,255,.7)}
+.cap{margin-top:54px;font-size:clamp(.78rem,2.3vw,.92rem);line-height:1.8}.cap a{display:inline-block;margin-top:6px;color:#c2387a;border-bottom:1.5px solid}
+</style>
+</head>
+<body>
+<header><b>ChocolateLabs</b><span>Slides: 1</span></header>
+<main>
+  <a class="slide" href="https://vibejibe.me"><div class="frost"><small>No. 001</small><b>VibeJibe</b><small>10 / 2026</small></div><div class="glass"><i class="stain"></i><i class="cover"></i><i class="ring"></i></div></a>
+  <p class="cap">A small software lab.<br>One memory for every AI you use.<br><a href="https://vibejibe.me">vibejibe.me &rarr;</a></p>
+</main>
+<footer><a href="mailto:woof@chocolatelabs.me">woof@chocolatelabs.me</a><span>&copy; 2026</span></footer>
+</body>
+</html>
